@@ -1,0 +1,11 @@
+name: 01-building-blocks
+
+on:
+    push:
+
+jobs:
+    echo-hello:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Running OS
+              run: echo "Running on ${{ runner.os }} operating system!"
