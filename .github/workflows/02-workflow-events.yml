@@ -1,6 +1,11 @@
 name: 02-workflow Events
 
-on: push
+on: 
+    push:
+    pull_request:
+    schedule:
+        - cron: '*/5 * * * *' # This will trigger the workflow every 
+    workflow_dispatch:       
 
 jobs:
     echo-hello:
